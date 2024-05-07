@@ -1,0 +1,29 @@
+{
+  "recommendations": [
+    // CSS extensions
+    "pranaygp.vscode-css-peek",
+    "bradlc.vscode-tailwindcss",
+
+    // Code quality
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+    "yoavbls.pretty-ts-errors",
+
+    // pretty VSCode
+    "pkief.material-icon-theme",
+    "johnpapa.vscode-peacock",
+    "aykutsarac.jsoncrack-vscode",
+
+    // Productivity
+    "ipatalas.vscode-postfix-ts",
+    // Productivity - Next.js
+    "pulkitgangwar.nextjs-snippets",
+
+    // DX
+    "mikestead.dotenv",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense"
+  ]
+}
