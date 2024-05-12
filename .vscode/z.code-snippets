@@ -1,12 +1,51 @@
 {
-  // Project Snippets
-  // "Print to console": {
-  // 	"scope": "javascript,typescript",
-  // 	"prefix": "log",
-  // 	"body": [
-  // 		"console.log('$1');",
-  // 		"$2"
-  // 	],
-  // 	"description": "Log output to console"
-  // }
+  "Pure Component": {
+    "scope": "typescriptreact",
+    "prefix": "tsx-pure",
+    "body": ["export const $TM_FILENAME_BASE = () => {", "  return <div>$TM_FILENAME_BASE</div>", "}"],
+    "description": "Typescript React Function Component"
+  },
+  "Wrapper Component": {
+    "scope": "typescriptreact",
+    "prefix": "tsx-slot",
+    "body": [
+      "import { cn } from '@/lib/utils'",
+      "",
+      "interface ${TM_FILENAME_BASE}Props {",
+      "  children: React.ReactNode",
+      "  className?: string",
+      "}",
+      "",
+      "export const $TM_FILENAME_BASE = ({ children, className }: ${TM_FILENAME_BASE}Props) => {",
+      "  return <div className={cn('${1:flex}', className)}>{children}</div>",
+      "}"
+    ],
+    "description": "Typescript React Function Component with className and children"
+  },
+  "Div Component": {
+    "scope": "typescriptreact",
+    "prefix": "tsx-div",
+    "body": [
+      "import { cn } from '@/lib/utils'",
+      "import { HTMLAttributes } from 'react'",
+      "",
+      "interface ${TM_FILENAME_BASE}Props extends HTMLAttributes<HTMLDivElement> {}",
+      "",
+      "export const $TM_FILENAME_BASE = ({ className, ...props }: ${TM_FILENAME_BASE}Props) => {",
+      "  return <div className={cn('${1:flex}', className)} {...props}>$TM_FILENAME_BASE</div>",
+      "}"
+    ],
+    "description": "Typescript React Function Div Component"
+  },
+  "div with classname": {
+    "scope": "typescriptreact",
+    "prefix": "divc",
+    "body": ["<div className='$1'>$0</div>"]
+  },
+  "useState Snippet": {
+    "scope": "typescriptreact",
+    "prefix": "u-state",
+    "body": ["const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState<${2:string}>(${3:''})"],
+    "description": "useState snippet"
+  }
 }
