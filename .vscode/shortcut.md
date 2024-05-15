@@ -38,6 +38,18 @@
 | ⇧⌥A     | Toggle block comment     |
 | ⌥Z      | Toggle word wrap         |
 
+## Multi Cursor
+
+| Shortcut  | Multi Cursor                                |
+| --------- | ------------------------------------------- |
+| ⇧⌘L       | Select all occurrences of current selection |
+| ⌥ + click | Insert cursor                               |
+| ⌥⌘↓       | Insert cursor below                         |
+| ⌘U        | Undo last cursor operation                  |
+| ⇧⌥I       | Insert cursor at end of each line selected  |
+| ⌘L        | Select current line                         |
+
+
 ## Search and Relplace
 
 | press  | Search and Relplace                  |
@@ -61,12 +73,20 @@
 
 
 
-## Editor Management 
+## Editor Management
 
 | press    | Editor Management                     |
 | -------- | ------------------------------------- |
 | ⌘\       | Split editor                          |
 | ⌘(1/2/3) | Focus into 1st, 2nd, 3rd editor group |
+
+| Shortcut   | Rich Language Editing   |
+| ---------- | ----------------------- |
+| ⌘.         | Quick Fix               |
+| ⌃Space, ⌘I | Trigger suggestion      |
+| ⇧⌘Space    | Trigger parameter hints |
+| ⇧⌥F        | Format document         |
+| F2         | Rename Symbol           |
 
 ## Terminal
 
@@ -74,6 +94,31 @@
 | ----- | ------------------------ |
 | ⌃`    | Show integrated terminal |
 | ⌃⇧`   | Create new terminal      |
+
+## File Management
+
+| press | File Management              |
+| ----- | ---------------------------- |
+| ⌃Tab  | Open next / previous         |
+| ⌃⇧Tab | Open  previous               |
+| ⌘N    | New File                     |
+| ⌘S    | Save                         |
+| ⌘W    | Close                        |
+| ⌘K P  | Copy path of active file     |
+| ⌘K R  | Reveal active file in Finder |
+
+## Display
+
+| Shortcut | Display                           |
+| -------- | --------------------------------- |
+| ⌃⌘F      | Toggle full screen                |
+| ⌘B       | Toggle Sidebar visibility         |
+| ⇧⌘F      | Show Search                       |
+| ⇧⌘J      | Toggle Search details             |
+| ⇧⌘U      | Show Output panel                 |
+| ⇧⌘V      | Open Markdown preview             |
+| ⌘K V     | Open Markdown preview to the side |
+| ⌘K Z     | Zen Mode (Esc Esc to exit)        |
 
 
 <!-- TODO: catogary -->
