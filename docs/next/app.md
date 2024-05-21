@@ -1,5 +1,81 @@
 # App
 
+TODO: links to origin docs
+
+## 👁️ Configuring
+
+### ✅ TS
+
+- plugin
+  - command shift p
+  - typescript: select typescript version
+  - use workspace version
+- minimum version v4.5.2
+- statically typed links
+  - `experimental: {typedRoutes: true}`
+- end-to-end type safety
+- async server component TS error
+  - TS 5.1.3 
+  - @types/react 18.2.8
+- path aliases and baseUrl
+- custom type declarations
+  - not in next-env.d.ts
+  - new-types.d.ts
+  - tsconfig.json includes the above
+
+### ✅ ESlint
+
+- config 
+  - default (eslint-config-next)
+- plugin
+- custom directories
+- disabling rules
+- with other tools
+  - prettier (eslint-config-prettier)
+
+### .env
+
+- loading environment variables
+  - `process.env.XX`
+  - referencing other variables `$VARIABLE`
+  - @next/env
+- for browser `NEXT_PUBLIC_XX`
+- default environment variables
+  - .env
+  - .env.development
+  - .env.production
+- test environment
+  - .env.test
+- load order
+  1. process.env
+  2. .env.$(NODE_ENV).local
+  3. .env.local
+  4. .env.$(NODE_ENV)
+  5. .env
+
+### Path Aliases
+
+- absolute imports
+- module aliases
+
+### MDX
+
+- @next/mdx
+- remote mdx
+  - next-mdx-remote
+- layouts
+- Remark and Rehype plugins
+- frontmatter
+- custom elements
+
+### src
+
+### ? Draft Mode
+
+### ? Content Security Policy
+
+- nonce
+
 ## Routing
 
 ### 👁️ Defining Routes
@@ -233,19 +309,91 @@
   - overwriting encryption keys
   - allowed origins
 
-## Caching
+## 👁️ Caching
 
 ### Request Memoization
 
+- duration 
+  - in the same render
+- revalidating
+  - no need
+- GET only
+
 ### Data Cache
+
+- duration
+  - unless revalidate / opt-out
+- revalidating
+  - time-based / on-demand
+- opt-out
 
 ### Full Route Cache
 
+1. react rending on the server
+2. next.js caching on the server(full route cache)
+3. react hydration and reconciliation on the client
+4. next.js caching on the client(route cache)
+5. subsequent navigation
+
+- static and dynamic rendering
+
+- duration
+- invalidation
+  - revalidating data
+  - redeploying
+- opt-out
+
 ### Router Cache
 
-### Cache Interaction
+- duration
+  - session
+  - automatic invalidation period
+- invalidation
+  - revalidatePath revalidateTag
+  - router.refresh
+- opt-out
 
-### APIs
+## 👁️ Authentication
+
+### Authentication
+
+- sign up / login
+
+1. capture user credentials
+2. validate form fields on the server
+3. create a user or check user credentials
+
+### Session Management
+
+#### stateless
+
+1. generating a secret key
+2. encrypting and decrypting
+3. setting cookies
+4. updating session
+5. deleting session
+
+#### database
+
+1. table
+2. functions
+3. encrypt
+
+### Authorization
+
+- Optimistic checks middleware
+
+- ⭐️ Data Access Layer
+- Data Transfer Object
+- Server Components
+- Layouts and auth checks
+- server actions
+- route handlers
+
+### Resources
+
+...
+
 
 
 
@@ -254,11 +402,7 @@
 
 ## Optimizing
 
-## Configuring
-
 ## Testing
-
-## Authentication
 
 ## ✅ Deploying
 
